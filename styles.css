@@ -37,8 +37,7 @@ nav a:hover {
     padding: 20px;
 }
 
-/* Sections */
-#about, #projects, #experience, #skills, #contact {
+#about, #projects, #experience, #contact {
     padding: 40px 20px;
 }
 
@@ -53,13 +52,6 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
-    text-align: center;
 }
 
 footer {

@@ -173,11 +173,12 @@ footer {
 .get-in-touch {
   padding: 0.5rem 1rem;
   background-color: #00ffe1;
-  color: #000;
+  color: #111;
   border-radius: 6px;
   font-weight: bold;
   margin-left: 1rem;
   text-decoration: none;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .get-in-touch:hover {
@@ -218,9 +219,9 @@ footer {
 }
 
 .project-links img.icon-img {
-  width: 28px;
-  height: 28px;
-  padding: 4px;
+  width: 36px;
+  height: 36px;
+  padding: 6px;
   background-color: #fff;
 }
 
@@ -263,4 +264,8 @@ a[href^="mailto:"] {
 }
 a[href^="mailto:"]:hover {
   color: #00ddb1;
+}
+
+.project-card:hover img.icon-img {
+  opacity: 1 !important; /* Keep GitHub icon fully visible */
 }

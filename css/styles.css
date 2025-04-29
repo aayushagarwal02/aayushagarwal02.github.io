@@ -164,7 +164,7 @@ footer {
   width: 32px;
   height: 32px;
   margin: 0 10px;
-  background-color: #333;
+  background-color: #fff;
   padding: 5px;
   border-radius: 8px;
 }
@@ -222,4 +222,45 @@ footer {
   height: 28px;
   padding: 4px;
   background-color: #fff;
+}
+
+/* Add this at the bottom of your existing styles.css */
+
+/* ⬇️ Fade-out GIF and show overlay text on hover */
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.project-card:hover img {
+  opacity: 0.15;  /* fades gif */
+}
+
+/* ⬇️ Make overlay text more visible above faded gif */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 255, 225, 0.95); /* more solid for readability */
+  color: #000;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  font-size: 0.95rem;
+}
+
+.project-card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* ⬇️ Ensure all emails are clickable */
+a[href^="mailto:"] {
+  color: #00ffe1;
+  text-decoration: underline;
+}
+a[href^="mailto:"]:hover {
+  color: #00ddb1;
 }

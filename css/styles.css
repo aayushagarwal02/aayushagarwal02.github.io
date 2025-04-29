@@ -183,6 +183,7 @@ footer {
 
 .get-in-touch:hover {
   background-color: #00ddb1;
+  color: #111; /* higher contrast */
 }
 
 /* Timeline placard with hover info */

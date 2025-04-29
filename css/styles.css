@@ -1,0 +1,225 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #f0f0f0;
+}
+
+header {
+  background: #1f1f1f;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 10px #00ffe1;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ffe1;
+  border: 2px solid #00ffe1;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50%;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffe1;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.timeline {
+  background: #151515;
+}
+
+.timeline-container {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #00ffe1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 1rem 2rem;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #00ffe1;
+  border: 4px solid #fff;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.right::before {
+  left: -13px;
+}
+
+.timeline-item h3 {
+  margin: 0.5rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #00ffe1;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 255, 225, 0.85);
+  color: #000;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .overlay {
+  transform: translateY(0);
+}
+
+.github-icon {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+footer {
+  background: #1a1a1a;
+  padding: 1rem;
+  text-align: center;
+  color: #888;
+}
+
+/* Fix icon sizes and styling */
+.icon-img {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* Get in touch button */
+.get-in-touch {
+  padding: 0.5rem 1rem;
+  background-color: #00ffe1;
+  color: #000;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.get-in-touch:hover {
+  background-color: #00ddb1;
+}
+
+/* Timeline placard with hover info */
+.placard {
+  background-color: #222;
+  border: 2px solid #00ffe1;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.hover-info {
+  display: none;
+  background-color: #111;
+  color: #00ffe1;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.placard:hover .hover-info {
+  display: block;
+}
+
+/* Fix GitHub icons inside projects */
+.project-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project-links img.icon-img {
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  background-color: #fff;
+}

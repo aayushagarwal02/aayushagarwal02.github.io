@@ -1,120 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Aayush Agarwal</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aayush Agarwal Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Aayush Agarwal</h1>
-        <p>Software Engineer</p>
-    </header>
+  <header>
+    <div class="logo">A</div>
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="mailto:contact.aayush.agarwal@gmail.com" class="get-in-touch">Get in Touch</a>
     </nav>
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a Software Engineer with experience in building distributed systems and scalable applications.
-               I have worked on workflow orchestration, backend system design, and cloud-based solutions.</p>
+  </header>
+
+  <section id="about" class="section">
+    <h1>Aayush Agarwal</h1>
+    <p>Software Engineer | Backend & Distributed Systems</p>
+    <p>Email: contact.aayush.agarwal@gmail.com</p>
+  </section>
+
+  <section id="experience" class="section timeline">
+    <h2>Experience</h2>
+    <div class="timeline-container">
+      <div class="timeline-item left">
+        <div class="placard">
+          <h3>Goldman Sachs – Market Risk Apps – SDE</h3>
+          <span>Jul 2022 – Present</span>
+          <div class="hover-info">
+            <p>Built Joblite, Comet – scalable task orchestrator, microservices on Kafka, dynamic retries, Grafana monitoring, multi-stage DAG-based job execution platform handling 100k+ tasks in 5 min.</p>
+          </div>
         </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <div class="card" onclick="window.open('https://codebash.online/', '_blank')">
-                    <div class="card-content">
-                        <h3>Online Judge Platform</h3>
-                        <p>A coding platform with secure authentication and real-time code execution.</p>
-                        <a href="https://github.com/aayushagarwal02/Online-Code-Judge-Platform" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div> 
-                <div class="card" onclick="window.open('https://api-rate-limiter-598c.onrender.com/?user_id=1', '_blank')">
-                    <div class="card-content">
-                        <h3>API Rate Limiter</h3>
-                        <p>A middleware using Redis for sliding window rate limiting.</p>
-                        <a href="https://github.com/aayushagarwal02/api_rate_limiter" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="placard">
+          <h3>Zevi.ai – ML Engineer</h3>
+          <span>Dec 2021 – Feb 2022</span>
+          <div class="hover-info">
+            <p>Deployed SBERT-based semantic search to improve ecommerce product search relevance by 25%, worked on Python, Docker, AWS EC2.</p>
+          </div>
         </div>
-    </section>
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-card">
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Goldman Sachs</h3>
-                        <p><strong>Associate (Previously Analyst)</strong></p>
-                        <p>July 2022 - Present</p>
-                        <ul>
-                            <li>Promoted to Associate in 2024, leading critical projects for market risk applications.</li>
-                            <li>Developed distributed orchestration framework handling 20M+ tasks.</li>
-                            <li>Optimized data ingestion pipelines to meet SLAs.</li>
-                            <li>Designed automated recovery systems to minimize downtime.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Goldman Sachs</h3>
-                        <p><strong>Intern, Capital Risk Applications</strong></p>
-                        <p>May 2021 - Jul 2021</p>
-                        <ul>
-                            <li>Worked on a validation framework for onboarding new data quality checks for CCAR reports.</li>
-                            <li>Designed a user-friendly framework for seamless rule configuration.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h3>Zevi.ai</h3>
-                        <p><strong>ML Engineer Intern</strong></p>
-                        <p>Dec 2021 - Feb 2022</p>
-                        <ul>
-                            <li>Developed an SBERT model to improve search relevance and autocomplete features.</li>
-                            <li>Worked on semantic context prediction for search queries.</li>
-                            <li>Implemented containerized solutions using Docker and deployed on AWS.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="placard">
+          <h3>Goldman Sachs – Capital Risk Apps – Intern</h3>
+          <span>May 2021 – Jul 2021</span>
+          <div class="hover-info">
+            <p>Developed SQL validation framework for regulatory data, enabling onboarding of new rules and reusable validation templates with Java + Spring Boot.</p>
+          </div>
         </div>
-    </section>
-    <section id="contact">
-        <div class="container text-center">
-            <h2>Contact</h2>
-            <p>
-                <a href="mailto:contact.aayush.agarwal@gmail.com">
-                    <i class="fas fa-envelope"></i> contact.aayush.agarwal@gmail.com
-                </a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/aayushagarwal02" target="_blank">
-                    <i class="fab fa-linkedin"></i> linkedin.com/in/aayushagarwal02
-                </a>
-            </p>
-            <p>
-                <a href="https://github.com/aayushagarwal02" target="_blank">
-                    <i class="fab fa-github"></i> github.com/aayushagarwal02
-                </a>
-            </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" onclick="window.open('https://google-doc-frontend-plum.vercel.app', '_blank')">
+        <img src="assets/collab-doc.png" alt="Collaborative Document Editor"/>
+        <div class="overlay">
+          <h3>Collaborative Document Editor</h3>
+          <p>Real-time editor using CRDT, WebSockets, Spring Boot & MongoDB</p>
+          <div class="project-links">
+            <a href="https://github.com/aayushagarwal02/collaborative_text_editor_crdt" target="_blank" onclick="event.stopPropagation()">
+              <img src="assets/github-icon.png" class="icon-img" alt="GitHub"/>
+            </a>
+          </div>
         </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Aayush Agarwal. All rights reserved.</p>
-    </footer>
+      </div>
+      <div class="project-card" onclick="window.open('https://codebash.online', '_blank')">
+        <img src="assets/codejudge.png" alt="Code Judge Platform"/>
+        <div class="overlay">
+          <h3>Code Judge Platform</h3>
+          <p>Secure online judge with Docker sandboxing & JWT auth</p>
+          <div class="project-links">
+            <a href="https://github.com/aayushagarwal02/Online-Code-Judge-Platform" target="_blank" onclick="event.stopPropagation()">
+              <img src="assets/github-icon.png" class="icon-img" alt="GitHub"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: contact.aayush.agarwal@gmail.com</p>
+    <div class="social-icons">
+      <a href="https://github.com/aayushagarwal02" target="_blank">
+        <img src="assets/github-icon.png" alt="GitHub" class="icon-img"/>
+      </a>
+      <a href="https://www.linkedin.com/in/aayushagarwal02" target="_blank">
+        <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon-img"/>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Aayush Agarwal</p>
+  </footer>
 </body>
 </html>

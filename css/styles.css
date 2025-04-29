@@ -173,12 +173,12 @@ footer {
 .get-in-touch {
   padding: 0.5rem 1rem;
   background-color: #00ffe1;
-  color: #111;
+  color: #111; /* higher contrast */
   border-radius: 6px;
-  font-weight: bold;
+  font-weight: 600;
   margin-left: 1rem;
   text-decoration: none;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  text-shadow: none; /* no blurring */
 }
 
 .get-in-touch:hover {
